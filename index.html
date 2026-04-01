@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya — Data Scientist & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">A.</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf" class="btn-resume">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Resume
+    </a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon moon">🌙</span>
+      <span class="toggle-icon sun">☀️</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag">// Data Scientist &amp; ML Engineer</div>
+    <h1 class="hero-name">Aditya<br><em>Joshi</em></h1>
+    <p class="hero-title">
+      Building production-grade AI systems — from clinical NLP and vision-language models
+      to real-time MLOps pipelines. 3+ years turning research into measurable impact.
+    </p>
+    <div class="hero-pills">
+      <span class="pill">LLMs &amp; VLMs</span>
+      <span class="pill">Clinical NLP</span>
+      <span class="pill">MLOps</span>
+      <span class="pill">RAG Systems</span>
+      <span class="pill">AI Engineering</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf.pdf" class="btn-outline" style="display:inline-flex;align-items:center;gap:0.5rem;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">// 01 — About</div>
+  <h2 class="section-title">Turning <em>data</em> into<br>deployed intelligence</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm a Data Scientist with ~3 years of production ML experience, most recently at
+        <strong style="color:var(--text)">Althea.ai</strong>, where I built end-to-end AI pipelines
+        for clinical NLP, vision-language models, and healthcare compliance — from research prototype
+        to production deployment.
+      </p>
+      <p>
+        My work spans VLMs (Qwen 2.5), semantic search with Milvus, BERT-based NER & relation
+        extraction, fraud/waste/abuse detection, HEDIS modeling, and a custom MinIO-based model
+        versioning platform serving multiple teams.
+      </p>
+      <p>
+        Currently seeking Data Scientist / ML Engineer / AI Engineer roles
+        where I can architect intelligent systems at scale.
+      </p>
+    </div>
+    <div class="about-stats reveal reveal-delay-2">
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years Production ML</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">9.0</div>
+        <div class="stat-label">M.Tech GPA</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Domains Shipped</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Learning Mode</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label">// 02 — Experience</div>
+  <h2 class="section-title">Where I've <em>shipped</em><br>things that work</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">2022 – 2025 · Althea.ai</div>
+      <div class="timeline-role">Senior Data Scientist</div>
+      <div class="timeline-company">AI-powered Healthcare Analytics Platform</div>
+      <div class="timeline-desc">
+        Architected end-to-end ML systems across clinical NLP, vision-language models,
+        and healthcare compliance. Led development of a BERT-based NER & relation extraction
+        pipeline for clinical knowledge extraction. Deployed Qwen 2.5 VLMs at scale using
+        vLLM with PagedAttention for throughput optimization. Built fraud/waste/abuse detection
+        models and HEDIS compliance scoring. Designed and shipped a custom MinIO-based model
+        versioning platform used across teams.
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">VLMs (Qwen 2.5)</span>
+        <span class="tag">vLLM + PagedAttention</span>
+        <span class="tag">PaddleOCR</span>
+        <span class="tag">Milvus</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">BERT NER</span>
+        <span class="tag">Clinical NLP</span>
+        <span class="tag">HEDIS</span>
+        <span class="tag">MinIO</span>
+        <span class="tag">MLOps</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">Prayagraj, India</div>
+      <div class="timeline-role">M.Tech — Computer Science</div>
+      <div class="timeline-company">MNNIT Prayagraj · GPA 9.0 / 10</div>
+      <div class="timeline-desc">
+        Specialized in machine learning and intelligent systems. Built strong foundations in
+        statistical modeling, deep learning, and NLP — directly informing production work
+        done at Althea.ai.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">// 03 — Projects</div>
+  <h2 class="section-title">Portfolio <em>builds</em> —<br>production-ready</h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-num">01 /</div>
+      <div class="project-title">Resume × JD Fit Scorer</div>
+      <div class="project-desc">
+        Multi-signal resume-to-job-description scoring engine. PDF extraction → semantic similarity
+        (sentence-transformers) → cross-encoder reranking → LLM-powered gap analysis
+        (Groq / Llama 3.3-70B). Streamlit UI with tabbed navigation, radar charts, and
+        actionable improvement suggestions.
+      </div>
+      <div class="project-stack">
+        <span class="project-badge">Streamlit</span>
+        <span class="project-badge">Sentence-Transformers</span>
+        <span class="project-badge">Cross-Encoder</span>
+        <span class="project-badge">Groq / Llama 3.3</span>
+        <span class="project-badge">PyMuPDF</span>
+        <span class="project-badge">Python</span>
+      </div>
+      <div class="project-status">
+        <span class="dot pending"></span>
+        Deploying to Streamlit Cloud
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">02 /</div>
+      <div class="project-title">AI Skill Demand Tracker</div>
+      <div class="project-desc">
+        Automated job-market intelligence tool. Scrapes live job postings, extracts in-demand
+        AI/ML skills via LLM analysis chains, stores in Supabase/PostgreSQL, and visualises
+        weekly trends through an interactive Streamlit dashboard. Deployed on Railway.
+      </div>
+      <div class="project-stack">
+        <span class="project-badge">Streamlit</span>
+        <span class="project-badge">Railway</span>
+        <span class="project-badge">Supabase / Postgres</span>
+        <span class="project-badge">LLM Extraction</span>
+        <span class="project-badge">Web Scraping</span>
+        <span class="project-badge">Python</span>
+      </div>
+      <div class="project-status">
+        <span class="dot"></span>
+        Live on Railway
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-num">03 /</div>
+      <div class="project-title">Sensei — Japanese AI Tutor</div>
+      <div class="project-desc">
+        RAG-powered conversational tutor for independent Japanese learners. VLM-based OCR
+        for kanji recognition from camera/images, spaced-repetition scheduling, Milvus
+        semantic search over a curated Japanese knowledge base, and personalized review
+        sessions. Combines technical depth with personal learning goals.
+      </div>
+      <div class="project-stack">
+        <span class="project-badge">RAG</span>
+        <span class="project-badge">Milvus</span>
+        <span class="project-badge">VLM OCR</span>
+        <span class="project-badge">Spaced Repetition</span>
+        <span class="project-badge">FastAPI</span>
+        <span class="project-badge">LangChain</span>
+      </div>
+      <div class="project-status">
+        <span class="dot pending"></span>
+        In Concept
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">// 04 — Skills</div>
+  <h2 class="section-title">The <em>stack</em> I reach<br>for first</h2>
+  <div class="skills-grid">
+
+    <div class="skill-group reveal">
+      <div class="skill-group-title">LLMs &amp; NLP</div>
+      <div class="skill-item"><span class="skill-name">VLMs (Qwen 2.5)</span><div class="skill-bar"><div class="skill-fill" data-width="0.92"></div></div></div>
+      <div class="skill-item"><span class="skill-name">vLLM / Inference</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">BERT / Transformers</span><div class="skill-bar"><div class="skill-fill" data-width="0.9"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Clinical NLP / NER</span><div class="skill-bar"><div class="skill-fill" data-width="0.9"></div></div></div>
+      <div class="skill-item"><span class="skill-name">RAG Systems</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-1">
+      <div class="skill-group-title">MLOps &amp; Infra</div>
+      <div class="skill-item"><span class="skill-name">FastAPI</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Milvus (Vector DB)</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+      <div class="skill-item"><span class="skill-name">MinIO / Model Registry</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Docker / Deployment</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Supabase / PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="0.75"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-2">
+      <div class="skill-group-title">CV &amp; Multimodal</div>
+      <div class="skill-item"><span class="skill-name">PaddleOCR</span><div class="skill-bar"><div class="skill-fill" data-width="0.87"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Vision Transformers</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Image Processing</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Multimodal Pipelines</span><div class="skill-bar"><div class="skill-fill" data-width="0.84"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-3">
+      <div class="skill-group-title">Core &amp; Frameworks</div>
+      <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="0.95"></div></div></div>
+      <div class="skill-item"><span class="skill-name">PyTorch / HuggingFace</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">LangChain / LangGraph</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Streamlit</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label">// 05 — Education</div>
+  <h2 class="section-title">Academic <em>foundation</em></h2>
+  <div class="edu-card reveal">
+    <div class="edu-badge">M</div>
+    <div>
+      <div class="edu-degree">M.Tech — Computer Science &amp; Engineering</div>
+      <div class="edu-school">MNNIT Prayagraj (Motilal Nehru National Institute of Technology)</div>
+      <div class="edu-meta">
+        <span>GPA: 9.0 / 10</span>
+        <span>Specialization: Machine Learning &amp; AI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label" style="display:inline-block;margin-bottom:1rem">// 06 — Contact</div>
+    <h2 class="contact-title">Let's build something <em>remarkable</em></h2>
+    <p class="contact-sub">
+      Open to Senior Data Scientist, ML Engineer, AI Engineer, and NLP/LLM Specialist
+      roles — preferably remote. Especially excited about AI companies with Japan operations.
+    </p>
+    <div class="contact-links">
+      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf.pdf" class="contact-link" style="background:var(--gold-dim);border-color:var(--border);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
+      <a href="mailto:aditya@example.com" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+      <a href="https://linkedin.com/in/aditya" target="_blank" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/aditya" target="_blank" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 Aditya Kumar — ML &amp; AI Engineer</span>
+  <span class="footer-jp">日本語を勉強中 🇯🇵</span>
+</footer>
+
+<script>
+  // ── THEME TOGGLE ──
+  const html = document.documentElement;
+  const toggleBtn = document.getElementById('themeToggle');
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') html.classList.add('light');
+
+  toggleBtn.addEventListener('click', () => {
+    html.classList.toggle('light');
+    localStorage.setItem('theme', html.classList.contains('light') ? 'light' : 'dark');
+  });
+
+  // ── REVEAL ON SCROLL ──
+  const reveals = document.querySelectorAll('.reveal, .timeline-item');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => obs.observe(r));
+
+  // ── SKILL BARS ──
+  const bars = document.querySelectorAll('.skill-fill');
+  const barObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const w = e.target.dataset.width;
+        e.target.style.width = (parseFloat(w) * 100) + '%';
+        e.target.classList.add('animated');
+        barObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  bars.forEach(b => barObs.observe(b));
+
+  // ── CARD MOUSE GLOW ──
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+      card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+    });
+  });
+
+  // ── NAV SHRINK ON SCROLL ──
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.padding = window.scrollY > 80 ? '1rem 4rem' : '1.4rem 4rem';
+  });
+</script>
+</body>
+</html>
