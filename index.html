@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aditya — Data Scientist & ML Engineer</title>
+  <title>Aditya Joshi — Data Scientist & ML Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.svg">
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">A.</div>
+  <div> <a href="/" class="nav-logo" style="text-decoration:none;">A.</a> </div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
     <a href="#contact">Contact</a>
   </div>
   <div class="nav-right">
@@ -41,19 +44,20 @@
     <div class="hero-tag">// Data Scientist &amp; ML Engineer</div>
     <h1 class="hero-name">Aditya<br><em>Joshi</em></h1>
     <p class="hero-title">
-      Building production-grade AI systems — from clinical NLP and vision-language models
-      to real-time MLOps pipelines. 3+ years turning research into measurable impact.
+      3+ years designing and deploying production-scale ML and Multimodal AI systems
+      in healthcare and insurance — from document intelligence and VLMs to scalable
+      MLOps pipelines.
     </p>
     <div class="hero-pills">
-      <span class="pill">LLMs &amp; VLMs</span>
+      <span class="pill">Vision-Language Models</span>
       <span class="pill">Clinical NLP</span>
+      <span class="pill">Document AI</span>
       <span class="pill">MLOps</span>
-      <span class="pill">RAG Systems</span>
-      <span class="pill">AI Engineering</span>
+      <span class="pill">Vector Search</span>
     </div>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf.pdf" class="btn-outline" style="display:inline-flex;align-items:center;gap:0.5rem;">
+      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf" class="btn-outline" style="display:inline-flex;align-items:center;gap:0.5rem;">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
       </a>
@@ -73,19 +77,19 @@
   <div class="about-grid">
     <div class="about-text reveal">
       <p>
-        I'm a Data Scientist with ~3 years of production ML experience, most recently at
-        <strong style="color:var(--text)">Althea.ai</strong>, where I built end-to-end AI pipelines
-        for clinical NLP, vision-language models, and healthcare compliance — from research prototype
-        to production deployment.
+        I'm a Senior Data Scientist with 3+ years of production ML experience, most recently at
+        <strong>Althea.ai</strong>, where I built end-to-end AI systems for document intelligence,
+        clinical NLP, Vision-Language Models, and healthcare compliance — taking projects from
+        research prototype to production at scale.
       </p>
       <p>
-        My work spans VLMs (Qwen 2.5), semantic search with Milvus, BERT-based NER & relation
-        extraction, fraud/waste/abuse detection, HEDIS modeling, and a custom MinIO-based model
-        versioning platform serving multiple teams.
+        My work spans VLM deployment (Qwen 2.5 via vLLM), BERT-based NER &amp; relation extraction,
+        Fraud/Waste/Abuse detection in health insurance, HEDIS compliance modeling, and a custom
+        MinIO-based model versioning platform. Currently building an AI-powered startup matching
+        platform using Milvus vector search and FastAPI.
       </p>
       <p>
-        Currently seeking Data Scientist / ML Engineer / AI Engineer roles
-        where I can architect intelligent systems at scale.
+        Open to Data Scientist, ML Engineer, AI Engineer, and NLP/LLM Specialist roles.
       </p>
     </div>
     <div class="about-stats reveal reveal-delay-2">
@@ -94,12 +98,12 @@
         <div class="stat-label">Years Production ML</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">9.0</div>
-        <div class="stat-label">M.Tech GPA</div>
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Domains Shipped</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">3+</div>
-        <div class="stat-label">Domains Shipped</div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Peer Reviewed Publications</div>
       </div>
       <div class="stat-card">
         <div class="stat-num">∞</div>
@@ -114,43 +118,94 @@
   <div class="section-label">// 02 — Experience</div>
   <h2 class="section-title">Where I've <em>shipped</em><br>things that work</h2>
   <div class="timeline">
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">2022 – 2025 · Althea.ai</div>
-      <div class="timeline-role">Senior Data Scientist</div>
-      <div class="timeline-company">AI-powered Healthcare Analytics Platform</div>
+      <div class="timeline-meta">Aug 2025 – Present · Remote</div>
+      <div class="timeline-role">AI Engineer</div>
+      <div class="timeline-company">IndiaCostartup App · Independent Project</div>
       <div class="timeline-desc">
-        Architected end-to-end ML systems across clinical NLP, vision-language models,
-        and healthcare compliance. Led development of a BERT-based NER & relation extraction
-        pipeline for clinical knowledge extraction. Deployed Qwen 2.5 VLMs at scale using
-        vLLM with PagedAttention for throughput optimization. Built fraud/waste/abuse detection
-        models and HEDIS compliance scoring. Designed and shipped a custom MinIO-based model
-        versioning platform used across teams.
+        Designing and developing an AI-powered recommendation platform connecting jobseekers,
+        investors, and startup founders using vector similarity search and profile feature embeddings.
+        Building semantic search and ranking pipelines using Transformer-based embeddings and Milvus
+        vector database for intelligent user-job-startup matching. Developing a microservices-based
+        ML architecture with FastAPI and async task queues for scalable real-time recommendations.
       </div>
       <div class="timeline-tags">
-        <span class="tag">VLMs (Qwen 2.5)</span>
-        <span class="tag">vLLM + PagedAttention</span>
-        <span class="tag">PaddleOCR</span>
         <span class="tag">Milvus</span>
+        <span class="tag">Transformers</span>
         <span class="tag">FastAPI</span>
-        <span class="tag">BERT NER</span>
-        <span class="tag">Clinical NLP</span>
-        <span class="tag">HEDIS</span>
-        <span class="tag">MinIO</span>
-        <span class="tag">MLOps</span>
+        <span class="tag">Vector Search</span>
+        <span class="tag">Microservices</span>
+        <span class="tag">Async Queues</span>
       </div>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <div class="timeline-meta">Prayagraj, India</div>
-      <div class="timeline-role">M.Tech — Computer Science</div>
-      <div class="timeline-company">MNNIT Prayagraj · GPA 9.0 / 10</div>
+      <div class="timeline-meta">Apr 2024 – Jul 2025 · Althea.ai, Noida</div>
+      <div class="timeline-role">Senior Data Scientist</div>
+      <div class="timeline-company">Althea.ai · Healthcare AI</div>
       <div class="timeline-desc">
-        Specialized in machine learning and intelligent systems. Built strong foundations in
-        statistical modeling, deep learning, and NLP — directly informing production work
-        done at Althea.ai.
+        Built a Key Information Extraction (KIE) and rule-based fraud detection engine for health
+        insurance policy analysis, enabling identification of Fraud, Waste &amp; Abuse (FWA) cases
+        and supporting data-driven risk review processes. Deployed Qwen 2.5 VLM using vLLM inference
+        optimization, improving throughput and concurrency for large-scale multimodal document
+        understanding. Developed an internal model versioning and deployment platform using MinIO,
+        enabling centralized model management and reliable production rollouts. Built PoC ML models
+        for HEDIS compliance verification, achieving 84% predictive accuracy.
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">Qwen 2.5 VLM</span>
+        <span class="tag">vLLM</span>
+        <span class="tag">MinIO</span>
+        <span class="tag">KIE</span>
+        <span class="tag">FWA Detection</span>
+        <span class="tag">HEDIS</span>
+        <span class="tag">Document AI</span>
       </div>
     </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">Apr 2022 – Apr 2024 · Althea.ai, Noida</div>
+      <div class="timeline-role">Data Scientist</div>
+      <div class="timeline-company">Althea.ai · Healthcare AI</div>
+      <div class="timeline-desc">
+        Developed BERT-based NER and Relation Extraction models for clinical document understanding,
+        improving entity recognition by 18% over previous baselines. Built ML models identifying
+        inequities in celiac disease diagnosis, uncovering a 23% demographic disparity. Designed
+        rule-driven patient referral models focused on Social Determinants of Health (SDoH) gaps,
+        contributing to a 27% increase in successful care interventions. Developed a chronic heart
+        failure risk prediction model achieving 78% accuracy. Created longitudinal patient journey
+        analytics frameworks for clinical outcome monitoring.
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">BERT NER</span>
+        <span class="tag">Relation Extraction</span>
+        <span class="tag">Clinical NLP</span>
+        <span class="tag">SDoH</span>
+        <span class="tag">Risk Prediction</span>
+        <span class="tag">Patient Analytics</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">Jan 2022 – Mar 2022 · Althea.ai, Noida</div>
+      <div class="timeline-role">Data Science Intern</div>
+      <div class="timeline-company">Althea.ai · Healthcare AI</div>
+      <div class="timeline-desc">
+        Developed entity extraction workflows using OCR pipelines and regex-based models for
+        clinical document classification, improving classification accuracy by 27%.
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">OCR Pipelines</span>
+        <span class="tag">Entity Extraction</span>
+        <span class="tag">Document Classification</span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -161,71 +216,77 @@
   <div class="projects-grid">
 
     <div class="project-card reveal">
-      <div class="project-num">01 /</div>
-      <div class="project-title">Resume × JD Fit Scorer</div>
-      <div class="project-desc">
-        Multi-signal resume-to-job-description scoring engine. PDF extraction → semantic similarity
-        (sentence-transformers) → cross-encoder reranking → LLM-powered gap analysis
-        (Groq / Llama 3.3-70B). Streamlit UI with tabbed navigation, radar charts, and
-        actionable improvement suggestions.
-      </div>
-      <div class="project-stack">
-        <span class="project-badge">Streamlit</span>
-        <span class="project-badge">Sentence-Transformers</span>
-        <span class="project-badge">Cross-Encoder</span>
-        <span class="project-badge">Groq / Llama 3.3</span>
-        <span class="project-badge">PyMuPDF</span>
-        <span class="project-badge">Python</span>
-      </div>
-      <div class="project-status">
-        <span class="dot pending"></span>
-        Deploying to Streamlit Cloud
-      </div>
+      <a href="https://aditya-joshi-05-resume-job-description-fit-analyzer.hf.space/" target="_blank" style="color: inherit; text-decoration: none;">
+        <div class="project-num">01 /</div>
+        <div class="project-title">Resume × Job Description Fit Analyzer</div>
+        <div class="project-desc">
+            Multi-signal resume-to-job-description scoring engine. PDF extraction → semantic similarity
+            (sentence-transformers) → cross-encoder reranking → LLM-powered gap analysis
+            (Groq / Llama 3.3-70B). Streamlit UI with tabbed navigation, radar charts, and
+            actionable improvement suggestions.
+        </div>
+        <div class="project-stack">
+            <span class="project-badge">Streamlit</span>
+            <span class="project-badge">Sentence-Transformers</span>
+            <span class="project-badge">Cross-Encoder</span>
+            <span class="project-badge">Groq / Llama 3.3</span>
+            <span class="project-badge">PyMuPDF</span>
+            <span class="project-badge">Python</span>
+        </div>
+        <div class="project-status">
+            <span class="dot"></span>
+            Live on Huggingface Spaces
+        </div>
+      </a>
     </div>
 
     <div class="project-card reveal reveal-delay-1">
-      <div class="project-num">02 /</div>
-      <div class="project-title">AI Skill Demand Tracker</div>
-      <div class="project-desc">
-        Automated job-market intelligence tool. Scrapes live job postings, extracts in-demand
-        AI/ML skills via LLM analysis chains, stores in Supabase/PostgreSQL, and visualises
-        weekly trends through an interactive Streamlit dashboard. Deployed on Railway.
-      </div>
-      <div class="project-stack">
-        <span class="project-badge">Streamlit</span>
-        <span class="project-badge">Railway</span>
-        <span class="project-badge">Supabase / Postgres</span>
-        <span class="project-badge">LLM Extraction</span>
-        <span class="project-badge">Web Scraping</span>
-        <span class="project-badge">Python</span>
-      </div>
-      <div class="project-status">
-        <span class="dot"></span>
-        Live on Railway
-      </div>
+      <a href="https://ai-skill-demand-tracker-dashboard-923863858448.asia-south1.run.app/" target="_blank" style="color: inherit; text-decoration: none;">
+        <div class="project-num">02 /</div>
+        <div class="project-title">AI Skill Demand Tracker</div>
+        <div class="project-desc">
+            Automated job-market intelligence tool. Scrapes live job postings, extracts in-demand
+            AI/ML skills via LLM analysis chains, stores in Supabase/PostgreSQL, and visualises
+            weekly trends through an interactive Streamlit dashboard.
+        </div>
+        <div class="project-stack">
+            <span class="project-badge">Streamlit</span>
+            <span class="project-badge">Railway</span>
+            <span class="project-badge">Supabase / Postgres</span>
+            <span class="project-badge">LLM Extraction</span>
+            <span class="project-badge">Web Scraping</span>
+            <span class="project-badge">Python</span>
+        </div>
+        <div class="project-status">
+            <span class="dot"></span>
+            Live on Google Cloud Run
+        </div>
+      </a>
     </div>
 
     <div class="project-card reveal reveal-delay-2">
-      <div class="project-num">03 /</div>
-      <div class="project-title">Sensei — Japanese AI Tutor</div>
-      <div class="project-desc">
-        RAG-powered conversational tutor for independent Japanese learners. VLM-based OCR
-        for kanji recognition from camera/images, spaced-repetition scheduling, Milvus
-        semantic search over a curated Japanese knowledge base, and personalized review
-        sessions. Combines technical depth with personal learning goals.
-      </div>
-      <div class="project-stack">
-        <span class="project-badge">RAG</span>
-        <span class="project-badge">Milvus</span>
-        <span class="project-badge">VLM OCR</span>
-        <span class="project-badge">Spaced Repetition</span>
-        <span class="project-badge">FastAPI</span>
-        <span class="project-badge">LangChain</span>
-      </div>
-      <div class="project-status">
-        <span class="dot pending"></span>
-        In Concept
-      </div>
+      <a href="https://indiacostartup.in/" target="_blank" style="color: inherit; text-decoration: none;">
+        <div class="project-num">03 /</div>
+        <div class="project-title">IndiaCostartup AI Platform</div>
+        <div class="project-desc">
+            AI-powered recommendation platform connecting jobseekers, investors, and startup founders.
+            Uses Transformer-based profile embeddings and Milvus vector search for intelligent
+            matching. Microservices architecture with FastAPI and async task queues for real-time
+            recommendations at scale.
+        </div>
+        <div class="project-stack">
+            <span class="project-badge">Milvus</span>
+            <span class="project-badge">FastAPI</span>
+            <span class="project-badge">Transformers</span>
+            <span class="project-badge">Vector Search</span>
+            <span class="project-badge">RabbitMQ</span>
+            <span class="project-badge">Docker</span>
+        </div>
+        <div class="project-status">
+            <span class="dot pending"></span>
+            In Development
+        </div>
+      </a>
     </div>
 
   </div>
@@ -238,37 +299,35 @@
   <div class="skills-grid">
 
     <div class="skill-group reveal">
-      <div class="skill-group-title">LLMs &amp; NLP</div>
-      <div class="skill-item"><span class="skill-name">VLMs (Qwen 2.5)</span><div class="skill-bar"><div class="skill-fill" data-width="0.92"></div></div></div>
-      <div class="skill-item"><span class="skill-name">vLLM / Inference</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
-      <div class="skill-item"><span class="skill-name">BERT / Transformers</span><div class="skill-bar"><div class="skill-fill" data-width="0.9"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Clinical NLP / NER</span><div class="skill-bar"><div class="skill-fill" data-width="0.9"></div></div></div>
-      <div class="skill-item"><span class="skill-name">RAG Systems</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+      <div class="skill-group-title">ML &amp; AI</div>
+      <div class="skill-item"><span class="skill-name">NLP / Transformers</span><div class="skill-bar"><div class="skill-fill" data-width="0.93"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Vision-Language Models</span><div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Classification &amp; Clustering</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Statistical Modeling</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
     </div>
 
     <div class="skill-group reveal reveal-delay-1">
-      <div class="skill-group-title">MLOps &amp; Infra</div>
-      <div class="skill-item"><span class="skill-name">FastAPI</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Milvus (Vector DB)</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
-      <div class="skill-item"><span class="skill-name">MinIO / Model Registry</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Docker / Deployment</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Supabase / PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="0.75"></div></div></div>
+      <div class="skill-group-title">CV &amp; Document AI</div>
+      <div class="skill-item"><span class="skill-name">PaddleOCR</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">YOLO / Layout Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Table Transformer</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
+      <div class="skill-item"><span class="skill-name">OpenCV</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
     </div>
 
     <div class="skill-group reveal reveal-delay-2">
-      <div class="skill-group-title">CV &amp; Multimodal</div>
-      <div class="skill-item"><span class="skill-name">PaddleOCR</span><div class="skill-bar"><div class="skill-fill" data-width="0.87"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Vision Transformers</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Image Processing</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Multimodal Pipelines</span><div class="skill-bar"><div class="skill-fill" data-width="0.84"></div></div></div>
+      <div class="skill-group-title">MLOps &amp; Infra</div>
+      <div class="skill-item"><span class="skill-name">FastAPI / REST APIs</span><div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div></div>
+      <div class="skill-item"><span class="skill-name">vLLM / Model Serving</span><div class="skill-bar"><div class="skill-fill" data-width="0.87"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">MinIO / Model Versioning</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
     </div>
 
     <div class="skill-group reveal reveal-delay-3">
-      <div class="skill-group-title">Core &amp; Frameworks</div>
+      <div class="skill-group-title">Languages &amp; Frameworks</div>
       <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="0.95"></div></div></div>
       <div class="skill-item"><span class="skill-name">PyTorch / HuggingFace</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
-      <div class="skill-item"><span class="skill-name">LangChain / LangGraph</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
-      <div class="skill-item"><span class="skill-name">Streamlit</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Milvus / PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="0.83"></div></div></div>
+      <div class="skill-item"><span class="skill-name">SQL / R</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
     </div>
 
   </div>
@@ -278,15 +337,73 @@
 <section id="education">
   <div class="section-label">// 05 — Education</div>
   <h2 class="section-title">Academic <em>foundation</em></h2>
-  <div class="edu-card reveal">
+
+  <div class="edu-card reveal" style="margin-bottom:1.5rem;">
     <div class="edu-badge">M</div>
     <div>
-      <div class="edu-degree">M.Tech — Computer Science &amp; Engineering</div>
+      <div class="edu-degree">M.Tech — Applied Mechanics</div>
       <div class="edu-school">MNNIT Prayagraj (Motilal Nehru National Institute of Technology)</div>
       <div class="edu-meta">
-        <span>GPA: 9.0 / 10</span>
-        <span>Specialization: Machine Learning &amp; AI</span>
+        <!-- <span>GPA: 9.0 / 10</span> -->
+        <span>2019 – 2021</span>
       </div>
+    </div>
+  </div>
+
+  <div class="edu-card reveal reveal-delay-1">
+    <div class="edu-badge">B</div>
+    <div>
+      <div class="edu-degree">B.Tech — Mechanical Engineering</div>
+      <div class="edu-school">College of Engineering Roorkee</div>
+      <div class="edu-meta">
+        <!-- <span>63.42%</span> -->
+        <span>2013 – 2017</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" style="background:var(--bg2);">
+  <div class="section-label">// 06 — Publications</div>
+  <h2 class="section-title">Peer-reviewed <em>research</em></h2>
+
+  <div class="edu-card reveal" style="margin-bottom:1.5rem;max-width:860px;">
+    <div class="edu-badge" style="font-size:0.85rem;font-family:'JetBrains Mono',monospace;">SNL</div>
+    <div>
+      <div class="edu-degree">
+        <a href="https://doi.org/10.1007/s41403-025-00551-5" target="_blank" class="pub-link">
+        Optimization of Horizontal Axis Wind Turbine Blade with Integrated Winglet for Improved Aerodynamic Performance
+        </a>
+      </div>
+      <div class="edu-school">Springer Nature Link</div>
+      <div class="edu-meta"><span>Oct 2025</span></div>
+    </div>
+  </div>
+
+  <div class="edu-card reveal reveal-delay-1" style="margin-bottom:1.5rem;max-width:860px;">
+    <div class="edu-badge" style="font-size:0.85rem;font-family:'JetBrains Mono',monospace;">AIP</div>
+    <div>
+      <div class="edu-degree">
+        <a href="https://doi.org/10.1063/5.0115991" target="_blank" class="pub-link">
+        Design and Multi-Objective Optimization of a Horizontal Axis Wind Turbine
+        </a>
+      </div>
+      <div class="edu-school">AIP Conference Proceedings</div>
+      <div class="edu-meta"><span>Nov 2022</span></div>
+    </div>
+  </div>
+
+  <div class="edu-card reveal reveal-delay-1" style="max-width:860px;">
+    <div class="edu-badge" style="font-size:0.85rem;font-family:'JetBrains Mono',monospace;">IOP</div>
+    <div>
+      <div class="edu-degree">
+        <a href="https://doi.org/10.1088/1755-1315/795/1/012028" target="_blank" class="pub-link">
+          Life Cycle Based Greenhouse Gas Footprint Assessment of a Smartphone
+        </a>
+      </div>
+      <div class="edu-school">IOP Conference Series: Earth and Environmental Science</div>
+      <div class="edu-meta"><span>Mar 2021</span></div>
     </div>
   </div>
 </section>
@@ -294,36 +411,39 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
-    <div class="section-label" style="display:inline-block;margin-bottom:1rem">// 06 — Contact</div>
+    <div class="section-label" style="display:inline-block;margin-bottom:1rem">// 07 — Contact</div>
     <h2 class="contact-title">Let's build something <em>remarkable</em></h2>
     <p class="contact-sub">
-      Open to Senior Data Scientist, ML Engineer, AI Engineer, and NLP/LLM Specialist
-      roles — preferably remote. Especially excited about AI companies with Japan operations.
+      Open to Data Scientist, ML Engineer, AI Engineer, and NLP/LLM Specialist roles.
     </p>
-    <div class="contact-links">
-      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf.pdf" class="contact-link" style="background:var(--gold-dim);border-color:var(--border);">
+  </div>
+  <div class="contact-links">
+      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf" class="contact-link" style="background:var(--gold-dim);border-color:var(--border);">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download Resume
       </a>
-      <a href="mailto:aditya@example.com" class="contact-link">
+      <a href="tel:+917017230986" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Phone
+      </a>
+      <a href="mailto:adityajoshi05.aj@gmail.com" class="contact-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         Email
       </a>
-      <a href="https://linkedin.com/in/aditya" target="_blank" class="contact-link">
+      <a href="https://linkedin.com/in/aditya-joshi-60504b108" target="_blank" class="contact-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
-      <a href="https://github.com/aditya" target="_blank" class="contact-link">
+      <a href="https://github.com/Aditya-Joshi-0/" target="_blank" class="contact-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         GitHub
       </a>
     </div>
-  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2025 Aditya Kumar — ML &amp; AI Engineer</span>
+  <span>© 2026 Aditya Joshi — ML &amp; AI Engineer · India</span>
   <span class="footer-jp">日本語を勉強中 🇯🇵</span>
 </footer>
 

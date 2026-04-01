@@ -145,6 +145,7 @@ html.light .toggle-icon.sun  { opacity: 1; }
     color: var(--gold);
     letter-spacing: 0.04em;
 }
+.nav-logo:hover { color: var(--gold2); border-color: var(--border); transform: translateY(-2px); }
 .nav-links { display: flex; gap: 2.5rem; }
 .nav-links a {
     font-family: 'JetBrains Mono', monospace;
@@ -723,6 +724,17 @@ section {
     transition: color 0.2s, border-color 0.2s, transform 0.2s;
 }
 .contact-link:hover { color: var(--gold); border-color: var(--border); transform: translateY(-2px); }
+
+/* ── Publication ── */
+.pub-link {
+    display: flex;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.pub-link:hover { color: var(--gold); border-color: var(--border); transform: translateY(-2px); }
 
 /* ── FOOTER ── */
 footer {
