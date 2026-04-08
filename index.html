@@ -1,26 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Joshi — Data Scientist & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.svg">
 </head>
 <body>
-    <nav>
-        <div class="hamburger-menu" aria-label="Toggle navigation">
-            <button aria-expanded="false" aria-controls="navbar" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+
+<nav>
+  <div> <a href="./" class="nav-logo" style="text-decoration:none;">A.</a> </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf" class="btn-resume hide-mobile">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Resume
+    </a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon moon">🌙</span>
+      <span class="toggle-icon sun">☀️</span>
+    </button>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-tag">// Data Scientist &amp; ML Engineer</div>
+    <h1 class="hero-name">Aditya<br><em>Joshi</em></h1>
+    <p class="hero-title">
+      3+ years building and deploying production ML systems — specializing in NLP, Large-Language Models, 
+      document intelligence, and scalable inference pipelines. End-to-end, from research to production.
+    </p>
+    <div class="hero-pills">
+      <span class="pill">Classical ML & Analytics</span>
+      <span class="pill">NLP & Text Intelligence</span>
+      <span class="pill">Large-Language Models</span>
+      <span class="pill">Vector Search & RAG</span>
+      <span class="pill">MLOps & Model Serving</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf" class="btn-outline" style="display:inline-flex;align-items:center;gap:0.5rem;justify-content:center;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-label">// 01 — About</div>
+  <h2 class="section-title">Turning <em>data</em> into<br>deployed intelligence</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        I'm a Data Scientist with 3+ years of experience building and shipping production-grade ML systems. 
+        My work spans the full pipeline — from data and model development to deployment and monitoring — 
+        with a strong focus on NLP, multimodal AI, and scalable inference.
+      </p>
+      <p>
+        I've worked across document understanding, information extraction, risk modeling, and recommendation systems — 
+        consistently bridging the gap between research and reliable production systems. 
+        I'm comfortable owning projects end-to-end, from scoping and experimentation to serving models at scale.
+      </p>
+      <p>
+        Currently open to Data Scientist, ML Engineer, and AI Engineer roles.
+      </p>
+    </div>
+    <div class="about-stats reveal reveal-delay-2">
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years Production ML</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Domains Shipped</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Peer Reviewed Publications</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Learning Mode</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-label">// 02 — Experience</div>
+  <h2 class="section-title">Where I've <em>shipped</em><br>things that work</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">Aug 2025 – Present · Remote</div>
+      <div class="timeline-role">AI Engineer</div>
+      <div class="timeline-company">IndiaCostartup App · Independent Project</div>
+      <div class="timeline-desc">
+        Designing and developing an AI-powered recommendation platform using Transformer-based embeddings 
+        and vector similarity search to enable intelligent matching between users, jobs, and opportunities. 
+        Building semantic search and ranking pipelines with a microservices-based ML architecture — 
+        Rest APIs, async task queues, and scalable real-time inference.
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">Recommendation Systems</span>
+        <span class="tag">Transformers</span>
+        <span class="tag">Vector Search</span>
+        <span class="tag">Rest API</span>
+        <span class="tag">Vector Search</span>
+        <span class="tag">Microservices</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-meta">Apr 2022 – Jul 2025 · Althea.ai, Noida</div>
+      <div class="timeline-role">Senior Data Scientist</div>
+      <div class="timeline-company">Althea.ai · Healthcare AI</div>
+      <div class="timeline-desc">
+        Over three and a half years, built and shipped production ML systems across NLP, document understanding, 
+        multimodal AI, and risk modeling. Developed BERT-based NER and relation extraction pipelines, 
+        improving entity recognition by 18% over prior baselines. Deployed Vision-Language Models using vLLM inference 
+        optimization for large-scale document understanding. Built classification and risk prediction models 
+        achieving up to 84% accuracy, and designed an internal model versioning platform using MinIO that standardized 
+        experimentation and production rollout workflows across the team. Also contributed to analytics frameworks 
+        for longitudinal data tracking and reporting.
+      </div>
+      <div class="timeline-tags">
+        <span class="tag">Document AI</span>
+        <span class="tag">Risk Modeling</span>
+        <span class="tag">PyTorch</span>
+        <span class="tag">Vision-Language Models</span>
+        <span class="tag">NLP</span>
+        <span class="tag">Microservices</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-label">// 03 — Projects</div>
+  <h2 class="section-title">Portfolio <em>builds</em> —<br>production-ready</h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <a href="https://aditya-joshi-05-resume-job-description-fit-analyzer.hf.space/" target="_blank" style="color: inherit; text-decoration: none;">
+        <div class="project-num">01 /</div>
+        <div class="project-title">Resume × Job Description Fit Analyzer</div>
+        <div class="project-desc">
+          A multi-signal scoring tool that evaluates resume-to-job-description alignment using semantic similarity, 
+          cross-encoder reranking, and LLM-powered gap analysis. Outputs structured feedback with match scores and 
+          actionable improvement suggestions through an interactive Streamlit interface.
         </div>
-        <ul id="navbar" class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <script src="script.js"></script>
+        <div class="project-stack">
+            <span class="project-badge">Streamlit</span>
+            <span class="project-badge">Sentence-Transformers</span>
+            <span class="project-badge">Cross-Encoder</span>
+            <span class="project-badge">GPT OSS / Llama 3.3</span>
+            <span class="project-badge">PyMuPDF</span>
+            <span class="project-badge">Python</span>
+            <span class="project-badge">Plotly</span>
+            <span class="project-badge">Prompt Engineering</span>
+        </div>
+        <div class="project-status">
+            <span class="dot"></span>
+            Live on Huggingface Spaces
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1">
+      <a href="https://ai-skill-demand-tracker-dashboard-923863858448.asia-south1.run.app/" target="_blank" style="color: inherit; text-decoration: none;">
+        <div class="project-num">02 /</div>
+        <div class="project-title">AI Skill Demand Tracker</div>
+        <div class="project-desc">
+          An automated pipeline that scrapes live job postings, extracts trending AI/ML skill requirements using 
+          LLM analysis, and surfaces weekly demand patterns through an interactive dashboard. Fully deployed with 
+          a persistent backend for historical trend tracking.
+        </div>
+        <div class="project-stack">
+            <span class="project-badge">Streamlit</span>
+            <span class="project-badge">PostgreSQL</span>
+            <span class="project-badge">LLM Extraction</span>
+            <span class="project-badge">Web Scraping</span>
+            <span class="project-badge">Python</span>
+            <span class="project-badge">Plotly</span>
+            <span class="project-badge">FastAPI</span>
+            <span class="project-badge">Prompt Engineering</span>
+        </div>
+        <div class="project-status">
+            <span class="dot"></span>
+            Live on Google Cloud Run
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2">
+      <a href="https://indiacostartup.in/" target="_blank" style="color: inherit; text-decoration: none;">
+        <div class="project-num">03 /</div>
+        <div class="project-title">IndiaCostartup AI Platform</div>
+        <div class="project-desc">
+          An intelligent recommendation platform that matches jobseekers, investors, and startup founders using 
+          profile embeddings and vector similarity search. Built on a microservices architecture with real-time 
+          semantic ranking and scalable async inference.
+        </div>
+        <div class="project-stack">
+            <span class="project-badge">Milvus</span>
+            <span class="project-badge">FastAPI</span>
+            <span class="project-badge">Transformers</span>
+            <span class="project-badge">Vector Search</span>
+            <span class="project-badge">Semantic Ranking</span>
+            <span class="project-badge">Docker</span>
+            <span class="project-badge">Microservices</span>
+        </div>
+        <div class="project-status">
+            <span class="dot pending"></span>
+            In Development
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label">// 04 — Skills</div>
+  <h2 class="section-title">The <em>stack</em> I reach<br>for first</h2>
+  <div class="skills-grid">
+
+    <div class="skill-group reveal">
+      <div class="skill-group-title">ML &amp; AI</div>
+      <div class="skill-item"><span class="skill-name">NLP &amp; Transformers</span><div class="skill-bar"><div class="skill-fill" data-width="0.93"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Vision-Language Models</span><div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Deep Learning</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Classification &amp; Clustering</span><div class="skill-bar"><div class="skill-fill" data-width="0.87"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Statistical Modeling</span><div class="skill-bar"><div class="skill-fill" data-width="0.84"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Hypothesis Testing</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-1">
+      <div class="skill-group-title">Document AI &amp; Computer Vision</div>
+      <div class="skill-item"><span class="skill-name">PaddleOCR</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">YOLO</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Layout Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="0.83"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Table Transformer</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
+      <div class="skill-item"><span class="skill-name">OpenCV</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Multimodal AI</span><div class="skill-bar"><div class="skill-fill" data-width="0.86"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-2">
+      <div class="skill-group-title">MLOps &amp; Deployment</div>
+      <div class="skill-item"><span class="skill-name">FastAPI</span><div class="skill-bar"><div class="skill-fill" data-width="0.90"></div></div></div>
+      <div class="skill-item"><span class="skill-name">vLLM</span><div class="skill-bar"><div class="skill-fill" data-width="0.87"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" data-width="0.82"></div></div></div>
+      <div class="skill-item"><span class="skill-name">MinIO / Model Versioning</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+      <div class="skill-item"><span class="skill-name">RabbitMQ</span><div class="skill-bar"><div class="skill-fill" data-width="0.75"></div></div></div>
+      <div class="skill-item"><span class="skill-name">CI/CD &amp; Git</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-3">
+      <div class="skill-group-title">Languages &amp; Frameworks</div>
+      <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="0.95"></div></div></div>
+      <div class="skill-item"><span class="skill-name">PyTorch</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">HuggingFace</span><div class="skill-bar"><div class="skill-fill" data-width="0.88"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Scikit-learn / XGBoost</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+      <div class="skill-item"><span class="skill-name">TensorFlow</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
+      <div class="skill-item"><span class="skill-name">SQL &amp; R</span><div class="skill-bar"><div class="skill-fill" data-width="0.76"></div></div></div>
+    </div>
+
+    <div class="skill-group reveal reveal-delay-4">
+      <div class="skill-group-title">Databases &amp; Analytics</div>
+      <div class="skill-item"><span class="skill-name">Milvus (Vector DB)</span><div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div></div>
+      <div class="skill-item"><span class="skill-name">PostgreSQL / MySQL</span><div class="skill-bar"><div class="skill-fill" data-width="0.80"></div></div></div>
+      <div class="skill-item"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" data-width="0.75"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Tableau / Power BI</span><div class="skill-bar"><div class="skill-fill" data-width="0.72"></div></div></div>
+      <div class="skill-item"><span class="skill-name">Plotly</span><div class="skill-bar"><div class="skill-fill" data-width="0.78"></div></div></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-label">// 05 — Education</div>
+  <h2 class="section-title">Academic <em>foundation</em></h2>
+
+  <div class="edu-card reveal" style="margin-bottom:1.5rem;">
+    <div class="edu-badge">M</div>
+    <div>
+      <div class="edu-degree">M.Tech — Applied Mechanics</div>
+      <div class="edu-school">MNNIT Prayagraj (Motilal Nehru National Institute of Technology)</div>
+      <div class="edu-meta">
+        <span>2019 – 2021</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="edu-card reveal reveal-delay-1">
+    <div class="edu-badge">B</div>
+    <div>
+      <div class="edu-degree">B.Tech — Mechanical Engineering</div>
+      <div class="edu-school">College of Engineering Roorkee</div>
+      <div class="edu-meta">
+        <span>2013 – 2017</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications" style="background:var(--bg2);">
+  <div class="section-label">// 06 — Publications</div>
+  <h2 class="section-title">Peer-reviewed <em>research</em></h2>
+
+  <div class="edu-card reveal" style="margin-bottom:1.5rem;max-width:860px;">
+    <div class="edu-badge" style="font-size:0.85rem;font-family:'JetBrains Mono',monospace;">SNL</div>
+    <div>
+      <div class="edu-degree">
+        <a href="https://doi.org/10.1007/s41403-025-00551-5" target="_blank" class="pub-link">
+        Optimization of Horizontal Axis Wind Turbine Blade with Integrated Winglet for Improved Aerodynamic Performance
+        </a>
+      </div>
+      <div class="edu-school">Springer Nature Link</div>
+      <div class="edu-meta"><span>Oct 2025</span></div>
+    </div>
+  </div>
+
+  <div class="edu-card reveal reveal-delay-1" style="margin-bottom:1.5rem;max-width:860px;">
+    <div class="edu-badge" style="font-size:0.85rem;font-family:'JetBrains Mono',monospace;">AIP</div>
+    <div>
+      <div class="edu-degree">
+        <a href="https://doi.org/10.1063/5.0115991" target="_blank" class="pub-link">
+        Design and Multi-Objective Optimization of a Horizontal Axis Wind Turbine
+        </a>
+      </div>
+      <div class="edu-school">AIP Conference Proceedings</div>
+      <div class="edu-meta"><span>Nov 2022</span></div>
+    </div>
+  </div>
+
+  <div class="edu-card reveal reveal-delay-1" style="max-width:860px;">
+    <div class="edu-badge" style="font-size:0.85rem;font-family:'JetBrains Mono',monospace;">IOP</div>
+    <div>
+      <div class="edu-degree">
+        <a href="https://doi.org/10.1088/1755-1315/795/1/012028" target="_blank" class="pub-link">
+          Life Cycle Based Greenhouse Gas Footprint Assessment of a Smartphone
+        </a>
+      </div>
+      <div class="edu-school">IOP Conference Series: Earth and Environmental Science</div>
+      <div class="edu-meta"><span>Mar 2021</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label" style="display:inline-block;margin-bottom:1rem">// 07 — Contact</div>
+    <h2 class="contact-title">Let's build something <em>remarkable</em></h2>
+    <p class="contact-sub">
+      Open to Data Scientist, ML Engineer, AI Engineer, and NLP/LLM Specialist roles.
+    </p>
+  </div>
+  <div class="contact-links">
+      <a href="Aditya-Joshi-CV.pdf" download="Aditya-Joshi-CV.pdf" class="contact-link" style="background:var(--gold-dim);border-color:var(--border);">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
+      <a href="tel:+917017230986" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Phone
+      </a>
+      <a href="mailto:adityajoshi05.aj@gmail.com" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+      <a href="https://linkedin.com/in/aditya-joshi-60504b108" target="_blank" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/Aditya-Joshi-0/" target="_blank" class="contact-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+    </div>
+</section>
+
+<footer>
+  <span>© 2026 Aditya Joshi — ML &amp; AI Engineer · India</span>
+  <span class="footer-jp">日本語を勉強中 🇯🇵</span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
